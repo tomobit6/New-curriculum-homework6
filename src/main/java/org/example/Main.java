@@ -18,22 +18,22 @@ public class Main {
       }
     }
     System.out.println("第2課題");
-    Map<Integer, String> charactermap = new HashMap<>();
+    Map<Integer, String> characterMap = new HashMap<>();
 
-    charactermap.put(1, characterNames[0]);
-    charactermap.put(2, characterNames[1]);
-    charactermap.put(3, characterNames[2]);
-    charactermap.put(4, characterNames[3]);
-    charactermap.put(5, characterNames[4]);
-    charactermap.put(6, characterNames[5]);
-    charactermap.put(7, characterNames[6]);
-    charactermap.put(8, characterNames[7]);
-    charactermap.put(9, characterNames[8]);
-    charactermap.put(10, characterNames[9]);
+    characterMap.put(1, characterNames[0]);
+    characterMap.put(2, characterNames[1]);
+    characterMap.put(3, characterNames[2]);
+    characterMap.put(4, characterNames[3]);
+    characterMap.put(5, characterNames[4]);
+    characterMap.put(6, characterNames[5]);
+    characterMap.put(7, characterNames[6]);
+    characterMap.put(8, characterNames[7]);
+    characterMap.put(9, characterNames[8]);
+    characterMap.put(10, characterNames[9]);
 
-    for (Map.Entry<Integer, String> name2 : charactermap.entrySet()) {
+    for (Map.Entry<Integer, String> name2 : characterMap.entrySet()) {
       if (name2.getKey() % 2 == 0) {
-        String removed = charactermap.remove(name2);
+        String removed = characterMap.remove(name2);
       } else {
         System.out.println(name2.getKey() + ":" + name2.getValue());
       }
